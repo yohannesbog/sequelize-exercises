@@ -23,7 +23,7 @@ Track.init ({
         allowNull: false   
     },
 
-}, { sequelize, modelName: 'track', tableName: 'track', timestamps: false })
+}, { sequelize, modelName: 'track', tableName: 'tracks', timestamps: false })
 
 
 //prompt user to insert value into track table

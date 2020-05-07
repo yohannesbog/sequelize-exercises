@@ -15,7 +15,7 @@ Artist.init ({
         allowNull: false   
     },
 
-}, { sequelize, modelName: 'artist', tableName: 'artist', timestamps: false })
+}, { sequelize, modelName: 'artist', tableName: 'artists', timestamps: false })
 
 
 // Prompt user to insert values
