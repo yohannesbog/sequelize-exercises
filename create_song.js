@@ -1,6 +1,6 @@
 
 const Sequelize = require ('sequelize');
-const sequelize = new Sequelize ('music', 'postgres', 'postgress', {
+const sequelize = new Sequelize ('music_sequelize', 'postgres', 'postgress', {
     host: 'localhost',
     dialect: 'postgres'
 }) 
@@ -26,7 +26,7 @@ Song.init({
     { sequelize, modelName: 'song', tableName: 'song', timestamps: false}
 
 )
-//prompt user to insert value into song table
+//initiate to prompt user  insert value into song table
 promptToCreateSongRecords ()
 
 

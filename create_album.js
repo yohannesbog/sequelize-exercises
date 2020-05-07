@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-const sequelize = new Sequelize('music', 'postgres', 'postgres', {
+const sequelize = new Sequelize('music_sequelize', 'postgres', 'postgres', {
     host: 'localhost',
     dialect: 'postgres'
   });
@@ -23,7 +23,6 @@ Album.init({
         type: Sequelize.STRING,
         allowNull: false
       }, 
-      //... etc
 }, { sequelize, modelName: 'album', tableName: 'album', timestamps: false });
 
 // prompt to create album records 
